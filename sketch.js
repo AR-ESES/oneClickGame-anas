@@ -4,78 +4,7 @@ let vImg;
 let fImg;
 let viuvas = [];
 let soundClassifier;
-var tela =  0;
-//menu
-var xRect = 200;
-var yRect = 150;
-var opcaoMenu = 1;
-//imagens
-let img;
-let myFont;
-let imgCred;
-let imgInst;
 
-function preload() {
-  img = loadImage ('harry.jpg');
-  imgCred = loadImage ('harry2.jpg');
-  imgInst = loadImage ('harry3.jpg');
-  myFont = loadFont ('Rainbow Paper.otf')
-}
-
-function draw (){
-  if (tela == 0) {
-    menu();
-}
- if (tela == 1) {
-    instrucoes();
-}
- if (tela == 1) {
-    creditos();
- }
-}
-
-function menu () {
-  background(img);
-  rect (xRect, yRect, 290, 45, 15);
-
-  textFont (myFont);
-  textSize (39);
-  text ('Flappy Bird da Marvel', 85, 75);
-
-  textSize(35);
-  text('Jogar', 260, 180);
-  text('Instruções', 210, 280);
-  text('Créditos', 235, 380);
-}
-
-function instrucoes(){
-  background(imgInst);
-}
-
-function creditos(){
-  background(imgCred);
-}
-
-function keypressed() {
-
-  if(key=="ArrowUp" && yRect>180){
-    yRect+=100;
-    opcaoMenu--;
-  }
-
-  if(key=="ArrowDown" && yRect<330){
-    yRect+=100;
-    opcaoMenu++;
-  }
-
-  if(key=="Enter"){
-    tela = opcaoMenu;
-  }
-
-   if(key=="Escape"){
-    tela = 0;
-  }
-}
 function preload() {
   const options = {
     probabilityThreshold: 0.95
@@ -111,7 +40,6 @@ function gotCommand(error, results) {
 function spacePressed() {
   if (space == ' ') {
     steven.jump();
-    fundo.move();
   }
 }
 
