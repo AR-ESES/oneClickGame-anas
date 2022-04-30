@@ -35,8 +35,8 @@ function gotCommand(error, results) {
   }
 }
 
-function keyPressed() {
-  if (key == ' ') {
+function spacePressed() {
+  if (space == ' ') {
     steven.jump();
   }
 }
