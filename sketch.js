@@ -47,7 +47,7 @@ function draw() {
     predios.push(new Predio());
   }
   
-  background(bImg);
+  background(fImg);
   for (let t of predios) {
     p.move();
     p.show();
