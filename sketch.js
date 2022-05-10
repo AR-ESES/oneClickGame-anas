@@ -1,8 +1,8 @@
 let steven;
 let sImg;
-let vImg;
+let pImg;
 let fImg;
-let viuvas = [];
+let predio = [];
 let soundClassifier;
 
 function preload() {
@@ -11,12 +11,12 @@ function preload() {
   };
   soundClassifier = ml5.soundClassifier('SpeechCommands18w', options);
   sImg = loadImage('steven.png');
-  vImg = loadImage('viuva.png');
+  vImg = loadImage('predio.png');
   fImg = loadImage('fundo.png');
 }
 
 function mousePressed() {
-  viuvas.push(new Viuva());
+  predioo.push(new Predio());
 }
 
 function setup() {
@@ -35,7 +35,7 @@ function gotCommand(error, results) {
   }
 }
 
-function enterPressed() {
+function spacePressed() {
   if (enter == ' ') {
     steven.jump();
   }
@@ -43,13 +43,13 @@ function enterPressed() {
 
 function draw() {
   if (random(1) < 0.005) {
-    viuvas.push(new Viuva());
+    predios.push(new Predio());
   }
 
   background(fImg);
-  for (let v of viuvas) {
-    v.move();
-    v.show();
+  for (let v of predios) {
+    p.move();
+    p.show();
     if (steven.hits(v)) {
       console.log('game over');
       noLoop();
