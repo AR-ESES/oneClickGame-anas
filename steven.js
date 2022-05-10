@@ -16,9 +16,9 @@ class Steven {
   hits(viuva) {
     let x1 = this.x + this.r * 0.5;
     let y1 = this.y + this.r * 0.5;
-    let x2 = viuva.x + viuva.r * 0.5;
-    let y2 = viuva.y + viuva.r * 0.5;
-    return collideCircleCircle(x1, y1, this.r, x2, y2, viuva.r);
+    let x2 = predio.x + predio.r * 0.5;
+    let y2 = predio.y + predio.r * 0.5;
+    return collideCircleCircle(x1, y1, this.r, x2, y2, predio.r);
   }
 
   move() {
