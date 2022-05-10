@@ -11,12 +11,12 @@ function preload() {
   };
   soundClassifier = ml5.soundClassifier('SpeechCommands18w', options);
   sImg = loadImage('steven.png');
-  vImg = loadImage('predio.png');
+  pImg = loadImage('predio.png');
   fImg = loadImage('fundo.png');
 }
 
 function mousePressed() {
-  predioo.push(new Predio());
+  predios.push(new Predio());
 }
 
 function setup() {
