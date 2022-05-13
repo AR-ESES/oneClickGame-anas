@@ -28,7 +28,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(800, 600);
+  createCanvas(1366, 768);
 
   thor = createSprite(50, 180, 20, 50);
 
