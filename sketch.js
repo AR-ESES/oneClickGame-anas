@@ -30,7 +30,7 @@ function preload() {
 function setup() {
   createCanvas(1366, 768);
 
-  thor = createSprite(50, 180, 20, 50);
+  thor = createSprite(50, 100, 20, 50);
 
   thor.addAnimation("running", thor_running);
   thor.addAnimation("collided", thor_collided);
@@ -41,10 +41,10 @@ function setup() {
   ground.x = ground.width / 2;
   ground.velocityX = -(6 + 3 * score / 100);
 
-  gameOver = createSprite(300, 100);
+  gameOver = createSprite(50, 90);
   gameOver.addImage(gameOverImg);
 
-  restart = createSprite(300, 140);
+  restart = createSprite(50, 90);
   restart.addImage(restartImg);
 
   gameOver.scale = 0.5;
@@ -56,7 +56,7 @@ function setup() {
   invisibleGround = createSprite(200, 190, 400, 10);
   invisibleGround.visible = false;
 
-  obstaclesGroup = new Group();
+  obstaclesGroup = new Group(50,90);
 
   score = 0;
 }
