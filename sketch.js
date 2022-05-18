@@ -41,7 +41,7 @@ function setup() {
 
   thor.addAnimation("running", thor_running);
   thor.addAnimation("collided", thor_collided);
-  thor.scale = 0.7;
+  thor.scale = 0.5;
 
   
   
@@ -68,7 +68,8 @@ function setup() {
 function draw() {
   //trex.debug = true;
   background(255);
-  text("Score: " + score, 500, 50);
+  fill (25);
+  text("Score: " + score, 750, 50);
 
   if (gameState === PLAY) {
     score = score + Math.round(getFrameRate() / 60);
@@ -98,7 +99,7 @@ function draw() {
     ground.velocityX = 0;
     thor.velocityY = 0;
     obstaclesGroup.setVelocityXEach(0);
-
+    obstaclesGroup.visible = false;
 
     //change the trex animation
     thor.changeAnimation("collided", thor_collided);
