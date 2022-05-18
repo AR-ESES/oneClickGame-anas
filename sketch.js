@@ -2,14 +2,12 @@ var PLAY = 1;
 var END = 0;
 var gameState = PLAY;
 
+var score = 0;
 var thor, thor_running, thor_collided;
 var ground, invisibleGround, groundImage;
 
 
 var obstaclesGroup, obstacle1, obstacle2, obstacle3, obstacle4;
-
-var score = 0;
-
 var gameOver, restart;
 
 
@@ -29,36 +27,42 @@ function preload() {
 
 function setup() {
   createCanvas(1366, 768);
+  
+  
+  
+  ground = createSprite(136,385);
+  ground.addImage("ground", groundImage);
+  ground.x = ground.width / 2;
+  ground.velocityX = -(3 + 3 * score / 50);
 
-  thor = createSprite(50, 100, 20, 50);
+    score = 0;
+      obstaclesGroup = new Group(236,80);
+  thor = createSprite(140, 200, 0, 50);
 
   thor.addAnimation("running", thor_running);
   thor.addAnimation("collided", thor_collided);
-  thor.scale = 0.5;
+  thor.scale = 0.7;
 
-  ground = createSprite(200, 180, 400, 20);
-  ground.addImage("ground", groundImage);
-  ground.x = ground.width / 2;
-  ground.velocityX = -(6 + 3 * score / 100);
-
-  gameOver = createSprite(50, 100, 20, 20);
+  
+  
+  gameOver = createSprite(616, 385, 1366, 768);
   gameOver.addImage(gameOverImg);
-
-  restart = createSprite(50, 100, 20, 20);
+  
+  restart = createSprite(616, 475, 20, 20);
   restart.addImage(restartImg);
 
-  gameOver.scale = 0.5;
-  restart.scale = 0.5;
+
+  restart.scale = 0.1;
+  gameOver.scale = 0.8;
 
   gameOver.visible = false;
   restart.visible = false;
 
-  invisibleGround = createSprite(200, 190, 400, 10);
+  invisibleGround = createSprite(30, 170, 100, 120);
   invisibleGround.visible = false;
 
-  obstaclesGroup = new Group(50,90);
+  
 
-  score = 0;
 }
 
 function draw() {
@@ -68,9 +72,9 @@ function draw() {
 
   if (gameState === PLAY) {
     score = score + Math.round(getFrameRate() / 60);
-    ground.velocityX = -(6 + 3 * score / 100);
+    ground.velocityX = -(3 + 3 * score / 50);
 
-    if (keyDown("space") && trex.y >= 159) {
+    if (keyDown("space") && thor.y >= 159) {
       thor.velocityY = -12;
     }
 
@@ -90,7 +94,6 @@ function draw() {
   } else if (gameState === END) {
     gameOver.visible = true;
     restart.visible = true;
-
     //set velcity of each game object to 0
     ground.velocityX = 0;
     thor.velocityY = 0;
@@ -114,10 +117,10 @@ function draw() {
 
 
 function spawnObstacles() {
-  if (frameCount % 60 === 0) {
-    var obstacle = createSprite(600, 165, 10, 40);
+  if (frameCount % 30 === 0) {
+    var obstacle = createSprite(600,685, 10, 40);
     //obstacle.debug = true;
-    obstacle.velocityX = -(6 + 3 * score / 100);
+    obstacle.velocityX = -(3 + 3 * score / 1000);
 
     //generate random obstacles
     var rand = Math.round(random(1, 6));
@@ -145,7 +148,7 @@ function spawnObstacles() {
     }
 
     //assign scale and lifetime to the obstacle           
-    obstacle.scale = 0.5;
+    obstacle.scale = 0.2;
     obstacle.lifetime = 300;
     //add each obstacle to the group
     obstaclesGroup.add(obstacle);
