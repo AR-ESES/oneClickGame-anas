@@ -101,7 +101,7 @@ function draw() {
     obstaclesGroup.setVelocityXEach(0);
     obstaclesGroup.visible = false;
 
-    //change the trex animation
+    //change the thor animation
     thor.changeAnimation("collided", thor_collided);
 
     //set lifetime of the game objects so that they are never destroyed
