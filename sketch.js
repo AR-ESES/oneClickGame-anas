@@ -69,7 +69,7 @@ function draw() {
   //trex.debug = true;
   background(255);
   fill (25);
-  text("Score: " + score, 750, 50);
+  
 
   if (gameState === PLAY) {
     score = score + Math.round(getFrameRate() / 60);
@@ -114,6 +114,7 @@ function draw() {
 
 
   drawSprites();
+   text("Score: " + score, 750, 50);
 }
 
 
