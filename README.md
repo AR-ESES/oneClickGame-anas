@@ -1,17 +1,22 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7679857&assignment_repo_type=AssignmentRepo)
-# Projeto Final - “One-Click Game”
+ INTRODUÇÃO
 
-### Introdução
+Com este trabalho pretendemos criar um jogo dinâmico e divertido com o tema “MARVEL”.
+O nosso público-alvo tem como mínimo de idade 12 anos, inclusive, pois o tema é muito conhecido pelo público que escolhemos. 
+Através do mesmo, crianças, adolescentes, jovens e adultos podem jogar e divertir-se, nas horas vagas.
 
-Pretende-se com este projeto que desenhem e implementem um pequeno jogo de apenas um comando (ao estilo Flappy Bird). A temática é livre, sendo que será valorizada a abordagem educativa e/ou o facto de tratarem um assunto que careça de maior atenção por parte do (de um) público.
+METODOLOGIA 
 
-### Metodologia e Entregáveis
 
-1. Com base nas premissas definidas na introdução e no conhecimento adquirido na introdução à programação multimédia com P5js das primeiras aulas, é pedido que definam um ambiente de jogo e personagens e/ou artefactos. Esta definição poderá ser feita com recurso a imagens e/ou ilustrações digitais - Tal resultará num **conjunto de layouts** que permitirá o teste, a revisão e o planeamento das tarefas subsequentes;
-2. **Design de Comunicação** - Todos os jogos merecem uma identidade gráfica que atuará enquanto elemento aglutinador em concordancia com o espirito da temática e coerente com as opções gráficas do jogo. Esta deverá ser aplicada no jogo, na documentação (instruções) do mesmo e em elementos promocionais, digitais e físicos que achem mais apropriados!
-3. **Video** - Será também necessário documentar a utilização do jogo em video, quer através da captura de ecrã directa em pleno jogo como também através da ilustração da sua utilização tanto de um ponto de vista subjetivo como ilustrando o ambiente, idades e target da sua utilização. Tal deverá ser sumarizado um pequeno video promocional de 30 segundos.
-4. **Distribuição do Jogo -** Por fim, a distribuição livre do jogo deverá acontecer através da sua publicação no **Github**, tanto para utilização (estando ativas as **Github Pages** com o jogo a funcionar) como através da **documentação no Readme.md**, onde figurará toda a documentação originada pelos pontos anteriores.
+Layout - O Layout consiste numa recriação de alguns personagens originais da Marvel Comics. Ilustrámos personagens como o Thor (personagem principal do jogo), Hulk, Capitão América, Viúva Negra e a Wanda (personagens ilustradas para os fundos utilizados, tanto no vídeo como no menu do jogo). O fundo tem como inspiração o original do jogo “Flappy Bird”, juntamente com o suspense representado em cartoon.
 
-### Referências
+Vídeo -   O vídeo é constituído por música, áudio original, áudio do ator que interpreta a personagem principal do jogo, animação e ilustrações feitas por nós mesmas.
+Para apresentar o jogo decidimos gravar um rapaz de 14 anos (Dinis Machado) e uma rapariga de 20 anos (Ana Feio) a jogar.
 
-[Flappy Bird](https://flappybird.io/)
+JOGO
+
+Instruções
+
+Salta os obstáculos e evita chocar contra eles;
+Para saltares deves clicar na tecla “space”;
+O objetivo é obter o maior resultado possível;
+O jogo termina quando chocares contra o obstáculo.
