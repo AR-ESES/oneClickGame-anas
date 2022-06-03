@@ -10,7 +10,7 @@ METODOLOGIA
 Layout - O Layout consiste numa recriação de alguns personagens originais da Marvel Comics. Ilustrámos personagens como o Thor (personagem principal do jogo), Hulk, Capitão América, Viúva Negra e a Wanda (personagens ilustradas para os fundos utilizados, tanto no vídeo como no menu do jogo). O fundo tem como inspiração o original do jogo “Flappy Bird”, juntamente com o suspense representado em cartoon.
 
 Vídeo -   O vídeo é constituído por música, áudio original, áudio do ator que interpreta a personagem principal do jogo, animação e ilustrações feitas por nós mesmas.
-Para apresentar o jogo decidimos gravar um rapaz de 14 anos (Dinis Machado) e uma rapariga de 20 anos (Ana Feio) a jogar.
+Para apresentar o jogo decidimos gravar um rapaz de 14 anos (Dinis Machado) e uma rapariga de 20 anos (Ana Lopes) a jogar.
 
 JOGO
 
