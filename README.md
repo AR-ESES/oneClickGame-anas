@@ -22,5 +22,5 @@ Instruções
 
 3.O objetivo é obter o maior resultado possível;
 
-4. O jogo termina quando chocares contra o obstáculo.
+4.O jogo termina quando chocares contra o obstáculo.
 
