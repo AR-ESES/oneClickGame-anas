@@ -53,9 +53,8 @@ function draw() {
     textSize(30)
     text('1. Salta os obstáculos e evita chocar contra eles.', 50, 150)
     text('2. Para saltares deves clicar na tecla "space" ou ', 50, 200)
-    text('ou podes saltar através do controlo de voz.', 80, 240)
-    text('3. O objetivo é obter o maior resultado possível.', 50, 290)
-    text('4. O jogo termina quando chocares contra o obstáculo.', 50, 340)
+    text('3. O objetivo é obter o maior resultado possível.', 50, 250)
+    text('4. O jogo termina quando chocares contra o obstáculo.', 50, 300)
 
     if (mouseButton == RIGHT) {
       MENU = 0
