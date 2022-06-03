@@ -17,6 +17,10 @@ JOGO
 Instruções
 
 1.Salta os obstáculos e evita chocar contra eles;
+
 2.Para saltares deves clicar na tecla “space”;
+
 3.O objetivo é obter o maior resultado possível;
+
 4. O jogo termina quando chocares contra o obstáculo.
+
