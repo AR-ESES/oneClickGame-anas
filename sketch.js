@@ -37,7 +37,7 @@ function preload() {
 //. canvas tamanho, thor,fundo, restart, game over e obstáculos animação
 
 function setup() {
-  createCanvas(1920, 1080);
+  createCanvas(1440, 900);
   
   slider = createSlider (0,1,0.5,0.01);
   song.play();
@@ -58,7 +58,7 @@ function setup() {
 
   
   
-  gameOver = createSprite(605, 410, 10, 10);
+  gameOver = createSprite(596, 410, 10, 10);
   gameOver.addImage(gameOverImg);
   
   restart = createSprite(616, 475, 20, 20);
