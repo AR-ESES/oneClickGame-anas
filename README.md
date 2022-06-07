@@ -24,3 +24,6 @@ Instruções
 
 4.O jogo termina quando chocares contra o obstáculo.
 
+
+Link para ver o nosso manual de normas que contém o merchandising e o vídeo promocional:
+https://www.canva.com/design/DAFCjeJy8rQ/ZpmqJ3BDWz-uQ6ahQQ6tTQ/view?utm_content=DAFCjeJy8rQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
