@@ -34,7 +34,7 @@ function preload() {
 
 }
 
-//. canvas tamanho, thor,fundo, restart, game over e obstáculos animação
+//. canvas tamanho, animação do ( thor,fundo, restart, game over e obstáculos)
 
 function setup() {
   createCanvas(1440, 900);
@@ -61,7 +61,7 @@ function setup() {
   gameOver = createSprite(596, 410, 10, 10);
   gameOver.addImage(gameOverImg);
   
-  restart = createSprite(608, 475, 20, 20);
+  restart = createSprite(616, 475, 20, 20);
   restart.addImage(restartImg);
 
 
@@ -85,7 +85,7 @@ function loaded () {
 }
 
 
-//. background preenchimento e codificação do jogo (thor saltar, ground e obstáculos a movimentar,)
+//. background preenchimento e codificação do jogo (thor saltar, ground e obstáculos a movimentar)
 
 function draw() {
   //trex.debug = true;
@@ -126,12 +126,13 @@ function draw() {
     obstaclesGroup.visible = false;
     
 
-    //change the thor animation
+    // alteração da animação do thor, para a animação do thor quando colidir com os obstáculos
     thor.changeAnimation("collided", thor_collided);
 
-    //set lifetime of the game objects so that they are never destroyed
+    //set lifetime do grupo de obstáculos
     obstaclesGroup.setLifetimeEach(-1);
 
+    // indicação que ao clicar no restart a jogo recomeça
     if (mousePressedOver(restart)) {
       reset();
     }
@@ -140,7 +141,7 @@ function draw() {
 
   drawSprites();
   
-   
+   // pontuação (score)
     text("Score: " + score, 750, 50);
 
 }
@@ -153,7 +154,7 @@ function spawnObstacles() {
     //obstacle.debug = true;
     obstacle.velocityX = -(3 + 3 * score / 1000);
 
-    //generate random obstacles
+    // gerar random obstáculos
     var rand = Math.round(random(1, 6));
     switch (rand) {
       case 1:
@@ -173,14 +174,15 @@ function spawnObstacles() {
         break;
     }
 
-    //assign scale and lifetime to the obstacle           
+    // scale e lifetime dos obstáculos        
     obstacle.scale = 0.2;
     obstacle.lifetime = 300;
-    //add each obstacle to the group
+    
     obstaclesGroup.add(obstacle);
   }
 }
 
+// função do gameover e restart (como fica quando o thor colidir com os obstáculos)
 function reset() {
   gameState = PLAY;
   gameOver.visible = false;
