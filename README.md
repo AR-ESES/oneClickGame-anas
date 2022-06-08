@@ -2,7 +2,7 @@
 
 Com este trabalho pretendemos criar um jogo dinâmico e divertido com o tema “MARVEL”.
 O nosso público-alvo tem como mínimo de idade 12 anos, inclusive, pois o tema é muito conhecido pelo público que escolhemos. 
-Através do mesmo, crianças, adolescentes, jovens e adultos podem jogar e divertir-se, nas horas vagas.
+Através do mesmo, crianças, adolescentes, jovens e adultos podem jogar e divertirem-se, nas horas vagas.
 
 METODOLOGIA 
 
